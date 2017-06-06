@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Echolocate</title>
+    <script src='js/sound.js'></script>
+    <script src='js/utilities.js'></script>
+    <script src='js/loader.js'></script>
+    <script src='js/main.js'></script>
+    <script src='js/keys.js'></script>
+    <script src='js/emitter.js'></script>
+    <style>
+      @import       'https://fonts.googleapis.com/css?family=Cinzel';
+
+      body {
+        text-align: center;
+        background: #121222;
+        font-family: Cinzel, verdana, sans serif;
+        color: #aaa;
+      }
+
+      canvas {
+        margin-left:10px;
+        margin-top:100px;
+        margin-bottom: 20px;
+        box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+        background: black;
+      }
+
+      #documentation{
+        height: 0px;
+        z-index: -1;
+        position: relative;
+        margin: 0 auto;
+        color:#121222;
+        text-align: left;
+        font-size: 1em;
+        width:600px;
+        font-family: serif;
+        transition: all 0.5s;
+      }
+      #notes{
+        display: inline;
+      }
+      #notes:hover{
+        cursor: pointer;
+      }
+      #arrow{
+        margin-bottom: 1.4px;
+        display: inline-block;
+        border-color: darkslategray;
+        border-right: 2px solid; 
+        border-bottom: 2px solid;
+        width: 5px; 
+        height: 5px;
+        transform: rotate(-45deg);
+        transition: transform 0.5s;
+      }
+      #space{
+        margin-top: 30px; 
+      }
+    </style>
+
+  </head>
+  <body>
+    <canvas width='640' height='480'>
+      Get a real browser!
+    </canvas>
+    <br />
+    <p id="notes">
+      Notes
+    </p>
+
+    <div id="arrow"></div>
+    <div id="documentation">
+      <h3>Controls:</h2>
+      <p> 
+        WASD or Left, Right, Up, Down arrows to move. <br />
+        P to pause.<br />
+        B to toggle collision circles and boundary box.<br/>
+      </p>
+
+      <h3>Source Materials:</h2>
+      <p> 
+        http://freemusicarchive.org/music/Resonance_DJ/The_Elements/6_-Until_The_End <br />
+        https://www.youtube.com/watch?v=ppLsu5Z2Np0 <br />
+        https://www.spriters-resource.com/pc_computer/spearofdestinythelostepisodes/sheet/55828/ <br />
+        http://welchwrite.com/blog/2016/06/20/nighttime-silhouette-night-sky-trees-silhouette-bw-blackandwhite-blackandwhitephotography-garden-plants-nature-outdoors-via-instagram-photo/#sthash.nQvPxuLS.dpbs <br />
+        https://pixabay.com/en/star-sun-frame-photo-border-1217844/<br />
+      </p>
+
+    </div>
+    <p>Made by Muriel Hagge</p>
+    <p id="space">&copy Copyright 2017</p>
+
+    <section id="audioControls">
+      <audio id="bgAudio" src="media/Until_The_End.mp3" loop></audio>
+      <audio id="squeeksAudio"></audio>
+    </section>
+  </body>
+</html>
